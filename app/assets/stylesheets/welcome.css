@@ -1,0 +1,461 @@
+/******************************************************************
+	clear style
+******************************************************************/
+body, div, p, ul, textarea {
+    margin: 0;
+    padding: 0;
+}
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    resize: none;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+/******************************************************************
+	genera style
+******************************************************************/
+body {
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+}
+
+.divider {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border: 1px solid rgba(79, 109, 99, 0.2);
+}
+/******************************************************************
+	icon-btn style
+******************************************************************/
+.icon-btn {
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    margin: 2px;
+
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-btn:hover,
+.icon-btn:active,
+.icon-btn:focus {
+    color: snow;
+}
+
+.icon-btn.download {
+   /* background-image: url("../images/download.png");*/
+    background-image: image-url("download.png");
+}
+
+.icon-btn.social {
+    background-image: image-url("social.png");
+}
+
+.icon-btn.help {
+    background-image: image-url("help.png");
+}
+
+.icon-btn.trash {
+    background-image: image-url("trash.png");
+}
+
+.icon-btn.add {
+    background-image: image-url("add.png");
+}
+
+.icon-btn.edit {
+    background-image: image-url("edit.png");
+}
+
+.icon-btn.delete {
+    background-image: image-url("delete.png");
+}
+
+.icon-btn.shortcut {
+    background-image: image-url("shortcut.png");
+}
+
+.icon-btn.setting {
+    background-image: image-url("settings.png");
+}
+
+.icon-btn.info {
+    background-image: image-url("info.png");
+}
+/******************************************************************
+	text-btn style
+******************************************************************/
+.text-btn {
+
+    /*padding: 8px 10px;
+    margin: 2px;*/
+    /*text-transform: capitalize;*/
+
+    /*color: #333;*/
+    /*background-color: #ececec;*/
+    /*text-shadow: 1px 1px 0 #fff;*/
+    
+/*box-shadow:
+  inset 0 3px 2px rgba(255,255,255,.22),
+  inset 0 -3px 2px rgba(0,0,0,.17),
+  inset 0 20px 10px rgba(255,255,255,.12),
+  0 0 4px 1px rgba(0,0,0,.1),
+  0 3px 2px rgba(0,0,0,.2);*/
+}
+
+.text-btn:hover,
+.text-btn:focus,
+.text-btn:active {
+  /*  border-color: #3072b3;
+    border-bottom-color: #2a65a0;
+    
+box-shadow:
+  inset 0 1px 0 rgba(0,0,0,0.1),
+  inset 0 -1px 0 rgba(255,255,255,0.7);*/
+}
+
+/******************************************************************
+	toggle button style
+******************************************************************/
+.toggle-button {
+    /*cursor: pointer;
+
+    padding: 6px 10px;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #333;*/
+
+    /*text-shadow: 0.1px 1px 0 #fff;
+    border-radius: 0.2em;*/
+
+  /*background-color: #dfdfdf;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: all 0.3s ease-out;
+
+  box-shadow:
+  inset 0 3px 2px rgba(255,255,255,.22),
+  inset 0 -3px 2px rgba(0,0,0,.17),
+  inset 0 20px 10px rgba(255,255,255,.12),
+  0 0 4px 1px rgba(0,0,0,.1),
+  0 3px 2px rgba(0,0,0,.2);
+  text-shadow: 0 1px rgba(255,255,255,0.7);*/
+}
+
+.toggle-button:focus,
+.toggle-button:hover,
+.toggle-button:active{
+
+  /*box-shadow:
+  inset 0 1px 0 rgba(0,0,0,0.1),
+  inset 0 -1px 0 rgba(255,255,255,0.7);*/
+}
+
+/******************************************************************
+	toggle button style
+******************************************************************/
+.group-btn {
+    cursor: pointer;
+    padding: 6px 10px;
+    text-align: center;
+
+  background-color: #dfdfdf;
+    text-shadow: 0.1px 1px 0 #fff;
+    border-radius: 0.2em;
+
+  box-shadow:
+  inset 0 3px 2px rgba(255,255,255,.22),
+  inset 0 -3px 2px rgba(0,0,0,.17),
+  inset 0 20px 10px rgba(255,255,255,.12),
+  0 0 4px 1px rgba(0,0,0,.1),
+  0 3px 2px rgba(0,0,0,.2);
+  /*text-shadow: 0 1px rgba(255,255,255,0.7);*/
+
+}
+.group-btn.normal {
+    border-left: 1px solid rgba(99, 99, 99, 0.2);
+    border-right: 1px solid rgba(99, 99, 99, 0.2);
+}
+.group-btn.normal:hover,
+.group-btn.normal:focus,
+.group-btn.normal:active{
+    box-shadow:
+  inset 0 1px 0 rgba(0,0,0,0.1),
+  inset 0 -1px 0 rgba(255,255,255,0.7);
+}
+
+.group-btn.start:hover,
+.group-btn.start:focus,
+.group-btn.start:active{
+    box-shadow:
+    inset 0 1px 0 rgba(0,0,0,0.1),
+    inset 0 -1px 0 rgba(255,255,255,0.7);
+}
+
+.group-btn.end:hover,
+.group-btn.end:focus,
+.group-btn.end:active{
+    box-shadow:
+    inset 0 1px 0 rgba(0,0,0,0.1),
+    inset 0 -1px 0 rgba(255,255,255,0.7);
+}
+
+.icon-label.get {
+    background-color: rgba(0, 85, 73, 0.8);
+
+    text-shadow: 0.25px 0.25px 0 #fff;
+    color: rgba(255, 251, 240, 0.6);
+    padding: 2px 6px 2px 6px;
+
+    -moz-box-shadow: 2px 2px 2px #008573 inset;
+    -webkit-box-shadow: 2px 2px 2px #008573 inset;
+    box-shadow: 2px 2px 2px #008573 inset;
+}
+
+.icon-label.post {
+    background-color: rgba(233, 240, 29, 0.8);
+    text-shadow: 0.25px 0.25px 0 #fff;
+    color: rgba(255, 251, 240, 0.6);
+    padding: 2px 6px 2px 6px;
+
+    -moz-box-shadow: 2px 2px 2px #E9F01D inset;
+    -webkit-box-shadow: 2px 2px 2px #E9F01D inset;
+    box-shadow: 2px 2px 2px #E9F01D inset;
+}
+/******************************************************************
+	genera layout
+******************************************************************/
+
+/*body, #container {
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    position: fixed;
+}*/
+
+/******************************************************************
+	frame frame-left frame-right
+******************************************************************/
+.frame-left {
+    float: left;
+    position: absolute;
+    width: 25%;
+    height: 100%;
+
+    border: 1px solid #rgba(100, 67, 89, 0.2);
+    background: rgba(99, 99, 99, 0.3);
+}
+
+.frame-right {
+    float: left;
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    margin-left: 27%;
+
+    overflow: auto;
+}
+
+.frame-right:after {
+    content: "";
+    clear: both;
+}
+
+/******************************************************************
+	.frame-left shell
+******************************************************************/
+.frame-left .shell {
+    height: 48px;
+    margin-top: 8px;
+    /*background: red;*/
+}
+.frame-left .shell.head {
+    margin: 17px 8px 4px 18px;
+}
+
+.frame-left .shell.bar {
+    height: 45px;
+    margin-left: 8px;
+    margin-right: 4px;
+}
+
+.frame-left .shell.history,
+.frame-left .shell.collection {
+    /*visibility: hidden;*/
+    margin-left: 10px;
+    margin-right: 6px;
+}
+
+.frame-left .shell.history li,
+.frame-left .shell.collection li{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.frame-left .shell.collection li.record {
+    margin-left: 12px;
+}
+
+/******************************************************************
+	.frame-left shell-head
+******************************************************************/
+.frame-left .shell.head .logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 #fff;
+    float: left;
+}
+
+.frame-left .shell.head .icon-btn {
+    float: right;
+}
+/******************************************************************
+	.frame-left shell-bar
+******************************************************************/
+.frame-left .shell.bar .text-btn {
+    float: left;
+}
+
+.frame-left .shell.bar .icon-btn {
+    float: right;
+    position: absolute;
+    margin-top: 8px;
+    right: 10px;
+}
+
+.frame-left .shell.bar .icon-btn.add {
+    visibility: hidden;
+}
+
+/******************************************************************
+	.frame-right shell-head
+******************************************************************/
+
+.frame-right .shell.head {
+    height: 60px;
+    margin-top: 20px;
+}
+
+.frame-right .shell.head .system {
+    margin-right: 65px;
+}
+
+.frame-right .shell.head .icon-btn {
+    float: right;
+    margin-top: 20px;
+
+}
+
+/******************************************************************
+	shell normal
+******************************************************************/
+
+.shell.normal {
+    position: relative;
+    width: 100%;
+    margin-left: 15px;
+}
+
+
+.shell.normal .shell.edit.url,
+.shell.normal .shell.edit.params,
+.shell.normal .shell.edit.headers{
+    /*position: relative; *//*why*/
+    width: 90%;
+    margin: 18px 4px 4px 16px;
+}
+
+.shell.normal .shell.edit.url {
+    height: 48px;
+}
+.shell.normal .shell.edit.url li{
+    float: right;
+    position: relative;
+    margin-right: 2px;
+    text-align: center;
+}
+
+.shell.normal .shell.edit.url textarea {
+  width: 500px;
+}
+
+.shell.normal .shell.edit.url li.method{
+    margin-right: 8px;
+    margin-left: 24px;
+}
+
+.shell.normal .shell.edit.url li button {
+  margin-left: 2px;
+}
+
+/******************************************************************
+	shell params, shell headers
+******************************************************************/
+
+.shell.params,
+.shell.headers{
+    width: 90%;
+    /*height: 48px;*/
+}
+
+.shell.params li,
+.shell.headers li {
+    height: 45px;
+    margin-left: 4px;
+}
+.shell.params li textarea,
+.shell.headers li textarea{
+    height: 25px;
+    margin-bottom: 0px;
+  margin-left: 4px;
+}
+.shell.headers li button {
+  margin-left: 2px;
+}
+/******************************************************************
+	shell action
+******************************************************************/
+.shell.action{
+    height: 45px;
+    width: 90%;
+}
+
+.shell.action li{
+    float: left;
+}
+
+.shell.action li.text-btn.reset {
+    float: right;
+}
+
+/******************************************************************
+	shell result
+******************************************************************/
+.shell.result {
+    margin-left: 15px;
+    margin-top: 60px;
+    width: 90%;
+}
+
+.shell.result .type {
+    height: 45px;
+}
+
+.shell.result .type li{
+    float: left;
+}
+.shell.result .show {
+    width: 100%;
+}

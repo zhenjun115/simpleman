@@ -1,0 +1,137 @@
+<div id="container" class="container">
+
+  <div class="frame-left">
+    <div class="shell head">
+      <p class="logo">simple man</p>
+      <ul>
+        <li class="icon-btn download"></li>
+        <li class="icon-btn social"></li>
+        <li class="icon-btn help"></li>
+      </ul>
+    </div>
+    <div class="shell bar">
+      <ul>
+        <li class="text-btn history">history</li>
+        <li class="text-btn collection">collection</li>
+      </ul>
+
+      <ul>
+        <li class="icon-btn trash"></li>
+        <li class="icon-btn add"></li>
+      </ul>
+    </div>
+
+    <p class="divider"></p>
+
+    <ul class="shell history">
+      <li>
+        <span class="icon-label get">GET</span>
+        http://strikingly-interview-test.herokuapp.com/guess/process
+      </li>
+
+      <li>
+        <span class="icon-label post">POST</span>
+        http://strikingly-interview-test.herokuapp.com/guess/process
+      </li>
+    </ul>
+    <ul class="shell collection">
+      <li class="folder"></li>
+    </ul>
+  </div>
+
+
+  <!-- Start frame-right -->
+  <div class="frame-right">
+
+    <!-- Start head shell -->
+    <div class="shell head">
+
+      <!-- Start system shell -->
+      <ul class="shell system">
+        <li class="icon-btn shortcut"></li>
+        <li class="icon-btn setting"></li>
+        <li class="icon-btn info"></li>
+      </ul>
+      <!-- End system shell -->
+
+    </div>
+    <!-- End head shell -->
+
+    <!-- Start normal shell -->
+    <div class="shell normal">
+
+      <!-- Start url edit shell -->
+      <ul class="shell edit url">
+
+        <li class="toggle-btn param">URL Params</li>
+        <li class="toggle-btn header">Headers</li>
+
+        <li class="method">
+          <select>
+            <option value="GET">GET</option>
+            <option value="POST">POST</option>
+          </select>
+        </li>
+
+        <li class="url">
+          <textarea rows="1"></textarea>
+        </li>
+      </ul>
+      <!-- End url edit shell -->
+
+      <!-- Start params edit shell -->
+      <ol class="shell edit params">
+        <li class="pair1">
+          <textarea rows="1" cols="30" class="key" id="paramkey1">Params key</textarea>
+          <textarea rows="1" cols="30" class="value" id="paramvalue1">value</textarea>
+          <button class="icon-btn delete" id="param1" style="visibility: hidden;"></button>
+        </li>
+      </ol>
+      <!-- End params edit shell -->
+
+      <!-- Start headers edit shell -->
+      <ol class="shell edit headers">
+        <li class="pair1">
+          <textarea rows="1" cols="30" class="key" id="headerkey1">Headers key</textarea>
+          <textarea rows="1" cols="30" class="value" id="headerkalue1">value</textarea>
+          <button class="icon-btn delete" id="header1" style="visibility: hidden;"></button>
+        </li>
+      </ol>
+      <!-- End headers edit shell -->
+
+      <!-- Start action shell -->
+      <ul class="shell action">
+        <li class="text-btn send">send</li>
+        <li class="text-btn add">add collection</li>
+        <li class="text-btn reset">reset</li>
+      </ul>
+      <!-- Start action shell -->
+    </div>
+    <!-- Start normal shell -->
+
+    <!-- Start result shell -->
+    <div class="shell result">
+
+
+      <!-- Start result type shell -->
+      <ul class="type">
+        <li class="group-btn start json">JSON</li>
+        <li class="group-btn normal xml">XML</li>
+        <li class="group-btn end header">HEADER</li>
+      </ul>
+      <!-- End result type shell -->
+
+      <!-- Start result shell -->
+      <textarea class="show">
+
+
+      </textarea>
+      <!-- End result shell -->
+    </div>
+    <!-- End result shell -->
+  </div>
+  <!-- End frame-right -->
+</div>
+
+</body>
+</html>
